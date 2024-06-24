@@ -1,8 +1,162 @@
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
+/************* Guardian Text Egyptian *************/
+
+@font-face {
+	font-family: 'GuardianTextEgyptian';
+	src: url('./assets/fonts/GuardianTextEgyptian-Regular.woff2')
+			format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'GuardianTextEgyptian';
+	src: url('./assets/fonts/GuardianTextEgyptian-RegularItalic.woff2')
+			format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'GuardianTextEgyptian';
+	src: url('./assets/fonts/GuardianTextEgyptian-Bold.woff2')
+			format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'GuardianTextEgyptian';
+	src: url('https://assets.guim.co.uk/static/frontend/fonts/guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-BoldItalic.woff2')
+			format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
 }
 
-a[test] {
-    color: blue;
+
+/************* Guardian Titlepiece *************/
+
+@font-face {
+	font-family: 'GT Guardian Titlepiece';
+	/*
+	This is a design flourish and needs the full charset to work as intended.
+	This makes the file too big in ttf (80kb vs 27kb).
+	Only serve this to woff*-compatible devices.
+	*/
+	src: url('./assets/fonts/GTGuardianTitlepiece-Bold.woff2')
+		format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+body {
+    font-family: 'GuardianTextEgyptian', Georgia, 'Times New Roman', Times, serif;
+    background-color: #111;
+    color: #ccc;
+    padding: .5rem;
+}
+
+h1, h2, h3 {
+    font-family: 'GT Guardian Titlepiece';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1266px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.icon-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-list li {
+    margin-right: 1rem;
+}
+
+.icon-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #ccc;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.icon-list .jobs-link {
+    width: 106px;
+    height: 48px;
+    border-radius: 30px;
+}
+
+.icon-list span {
+    margin: .5em;
+    color: #111111;
+    font-weight: bold;
+}
+
+.icon-list a:hover {
+    background-color: gold;
+}
+
+.icon-list svg {
+    width: 32px;
+    height: 32px;
+}
+
+.invert-colors {
+    filter: invert(1);
+}
+
+
+
+.frame {
+    display: block;
+    border: 1px solid #444;
+    max-width: 1266px;
+    min-height: 2400px;
+    margin: auto;
+    padding: none;
+}
+
+.nav-bar {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 1px solid #555;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    padding: 5px 16px 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid #555;
+}
+
+.link:hover,
+.link:focus,
+.link.active {
+    color: gold;
+    border-top: 3px solid gold;
+    padding-top: 2px;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.white {
+    color: #fff;
 }
