@@ -75,6 +75,14 @@ h4 {
     margin: 0 0 8px 0;
 }
 
+h5 {
+    margin: 8px 0 0 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
 p {
     margin: 0;
 }
@@ -87,6 +95,15 @@ header {
     max-width: 1266px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #555;
+}
+
+.plain-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .icon-list {
@@ -132,7 +149,6 @@ header {
     display: block;
     border: 1px solid #444;
     max-width: 1266px;
-    min-height: 2400px;
     margin: auto;
     padding: none;
 }
@@ -140,7 +156,6 @@ header {
 .nav-bar {
     display: flex;
     overflow-x: auto;
-    border-bottom: 1px solid #555;
     padding: 0;
     margin: 0;
 }
@@ -179,7 +194,6 @@ section {
 
 .hero {
     display: flex;
-    border-bottom: 1px solid #555;
 }
 
 .flexed-text {
@@ -232,7 +246,6 @@ section {
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: row;
-    border-bottom: 1px solid #555;
     justify-content: space-between;
 }
 
@@ -274,4 +287,75 @@ section {
 
 .gold-link {
     color: gold;
+}
+
+.blog-posts {
+
+}
+
+.blog-posts h3 {
+    font-size: 19px;
+}
+
+.posts {
+    display: flex;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    column-gap: 8px;
+    row-gap: 8px;
+    padding: 16px;
+    flex-wrap: wrap;
+    margin: 16px 0px;
+    padding: 0;
+}
+
+.posts li {
+    box-sizing: border-box;
+}
+
+.post {
+    width: 400px;
+    padding: 8px;
+    background: #333;
+    border-radius: 5px;
+}
+
+.post:focus-within {
+    outline: 2px solid #ccc; /* Adjust color and width as needed */
+    outline-offset: 2px; /* Optional: adds some space between the outline and the element */
+    box-shadow: 0 0 0 2px #000;
+}
+
+.post a:focus,
+.post a:focus img,
+.post a:focus h4,
+.post a:focus h5 {
+    outline: none;
+}
+
+.post figure {
+    height: 289px;
+    width: 380px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post img:-moz-broken {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
 }
