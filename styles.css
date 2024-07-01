@@ -50,13 +50,35 @@
 	font-display: swap;
 }
 
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: 1px solid white;
+    color: #ccc;
+}
+
+.left, .right {
+    flex: 0 1 240px;
+    border: inherit;
+    padding: inherit;
+} */
+
 
 body {
     font-family: 'GuardianTextEgyptian', Georgia, 'Times New Roman', Times, serif;
     background-color: #111;
     color: #ccc;
-    padding: .5rem;
-}
+
+    border: 1px solid white;
+
+    max-width: 1300px;
+    min-width: none;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+} 
 
 h1, h2, h3 {
     font-family: 'GT Guardian Titlepiece';
@@ -72,7 +94,80 @@ h3 {
 
 h4 {
     font-size: 16px;
-    margin: 0 0 8px 0;
+}
+
+h5 {
+    margin: 8px 0 0 0;
+}
+
+.white {
+    color: white;
+}
+
+.hover-gold-br:hover,
+.hover-gold-br:focus {
+    background: gold;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: 1px solid white;
+}
+
+#icons {
+    display: flex;
+    margin: 16px 0;
+}
+
+.icon {
+    background-color: #ccc;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+#jobs-link {
+    display: flex;
+    flex-direction: row;
+    width: 112px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #111;
+}
+
+#us {
+    
+}
+
+
+/* h1, h2, h3 {
+    font-family: 'GT Guardian Titlepiece';
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 16px;
 }
 
 h5 {
@@ -244,7 +339,6 @@ section {
 
 .goals {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-between;
 }
@@ -254,7 +348,6 @@ section {
     display: grid;
     row-gap: 16px;
     column-gap: 16px;
-    /* min-width: 544px; */
     padding: 32px;
     margin: 16px;
 }
@@ -289,10 +382,6 @@ section {
     color: gold;
 }
 
-.blog-posts {
-
-}
-
 .blog-posts h3 {
     font-size: 19px;
 }
@@ -322,8 +411,8 @@ section {
 }
 
 .post:focus-within {
-    outline: 2px solid #ccc; /* Adjust color and width as needed */
-    outline-offset: 2px; /* Optional: adds some space between the outline and the element */
+    outline: 2px solid #ccc;
+    outline-offset: 2px;
     box-shadow: 0 0 0 2px #000;
 }
 
@@ -358,4 +447,4 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 16px;
-}
+} */
