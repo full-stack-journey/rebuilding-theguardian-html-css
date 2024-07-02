@@ -11,8 +11,8 @@ Recreate the landing page (and maybe the other pages) of https://theguardian.eng
 - [x]  ~~Static Page~~
 - [ ] Responsive Page
 
-### Progress can be seen at https://theguardian-remake-static.netlify.app/
+#### Progress can be seen at https://theguardian-remake-static.netlify.app/
 
-## Contributing
+## Tips?
 
-Any tips or advice is welcome, just send me a message or open a pull request and I'll get to it as soon as I can. 
+If you have any suggestions, advice, or feedback for this project (or in general), I would greatly appreciate it!  My inbox is always open (georgeli295@gmail.com) and pull requests are welcomed as well!
