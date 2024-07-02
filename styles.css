@@ -68,15 +68,16 @@
 
 body {
     font-family: 'GuardianTextEgyptian', Georgia, 'Times New Roman', Times, serif;
-    background-color: #111;
     color: #ccc;
-
+    
+    background-color: #111;
     border: 1px solid white;
 
     max-width: 1300px;
-    min-width: none;
+    min-width: 288px;
+
     margin: 0 auto;
-    padding: 16px;
+    padding: 1rem;
     box-sizing: border-box;
 } 
 
@@ -85,89 +86,15 @@ h1, h2, h3 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 16px;
-}
-
-h5 {
-    margin: 8px 0 0 0;
-}
-
-.white {
-    color: white;
-}
-
-.hover-gold-br:hover,
-.hover-gold-br:focus {
-    background: gold;
-}
-
-#header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-    border: 1px solid white;
-}
-
-#icons {
-    display: flex;
-    margin: 16px 0;
-}
-
-.icon {
-    background-color: #ccc;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 16px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-.icon svg {
-    width: 32px;
-    height: 32px;
-}
-
-#jobs-link {
-    display: flex;
-    flex-direction: row;
-    width: 112px;
-    border-radius: 30px;
-    font-weight: bold;
-    color: #111;
-}
-
-#us {
-    
-}
-
-
-/* h1, h2, h3 {
-    font-family: 'GT Guardian Titlepiece';
-}
-
-h2 {
-    font-size: 60px;
-}
-
-h3 {
-    font-size: 48px;
-}
-
-h4 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h5 {
@@ -178,66 +105,163 @@ h5 {
     font-style: italic;
 }
 
-p {
-    margin: 0;
+.white {
+    color: white;
 }
 
-header {
+.hover-gold:hover {
+    color: gold;
+}
+
+.hover-gold-br:hover {
+    background: gold;
+}
+
+#header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: inherit;
+}
+
+#icons {
+    display: flex;
+
+    margin: 16px 0;
+}
+
+.icon {
+    text-decoration: none;
+    
+    background-color: #ccc;
+    border-radius: 50%;
+    
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    max-width: 1266px;
-    margin: 0 auto;
+
+    margin-right: 16px;
     box-sizing: border-box;
 }
 
-.border-bottom {
-    border-bottom: 1px solid #555;
+.icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+#jobs-link {
+    font-weight: bold;
+    color: #111;
+
+    border-radius: 30px;
+
+    width: 106px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#jobs-link span {
+    padding: 0 8px;
+}
+
+.container {
+    border: 1px solid #444;
+}
+
+#nav-bar {
+    border-bottom: 1px solid #444;
+
+    display: flex;
+    overflow-x: auto;
+
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    color: #ccc;
+    text-decoration: none;
+    
+    border-right: 1px solid #555;
+
+    white-space: nowrap;
+    
+    text-align: center;
+
+    padding: 5px 16px 8px 16px;
+}
+
+.link.active,
+.link:hover {
+    color: gold;
+
+    border-top: 3px solid gold;
+    
+    padding-top: 2px;
+}
+
+.section {
+    border-bottom: 1px solid #444;
+
+    padding: 1rem;
+}
+
+#hero {
+    display: flex;
+    overflow-x: auto;
+    column-gap: 1rem;
+}
+
+#hero-text {
+    line-height: 1.1;
+
+    width: 110%;
+}
+
+#hero-img {
+    display: flex;
+    
+    margin: auto 0;
+}
+
+#hero-img img {
+    width: 100%;
+}
+
+#join {
+    text-decoration: none;
+    color: #111;
+
+    background: #ccc;
+    white-space: nowrap;
+    
+    padding: 0px 15px;
+}
+
+#join:hover {
+    background: gold;
+}
+
+@media only screen and (max-width:945px) {
+    #hero {
+        flex-direction: column;
+    }
+}
+
+/*
+
+p {
+    margin: 0;
 }
 
 .plain-link {
     text-decoration: none;
     color: inherit;
-}
-
-.icon-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.icon-list li {
-    margin-right: 1rem;
-}
-
-.icon-list a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-    background-color: #ccc;
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-.icon-list .jobs-link {
-    width: 106px;
-    height: 48px;
-    border-radius: 30px;
-}
-
-.icon-list span {
-    margin: .5em;
-    color: #111111;
-    font-weight: bold;
-}
-
-.icon-list svg {
-    width: 32px;
-    height: 32px;
 }
 
 .frame {
@@ -246,41 +270,6 @@ header {
     max-width: 1266px;
     margin: auto;
     padding: none;
-}
-
-.nav-bar {
-    display: flex;
-    overflow-x: auto;
-    padding: 0;
-    margin: 0;
-}
-
-.link {
-    padding: 5px 16px 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    border-right: 1px solid #555;
-    color: #ccc;
-}
-
-.link:focus,
-.link.active {
-    color: gold;
-    border-top: 3px solid gold;
-    padding-top: 2px;
-}
-
-.hover-gold:hover,
-.hover-gold:focus {
-    color: gold;
-}
-
-.link:hover {
-    cursor: pointer;
-}
-
-.white {
-    color: #fff;
 }
 
 section {
