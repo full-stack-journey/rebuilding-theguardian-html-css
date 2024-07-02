@@ -15,7 +15,4 @@ Recreate the landing page (and maybe the other pages) of https://theguardian.eng
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Any tips or advice is welcome, just send me a message or open a pull request and I'll get to it as soon as I can. 
