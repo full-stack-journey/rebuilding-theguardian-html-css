@@ -9,7 +9,7 @@ Recreate the landing page (and maybe the other pages) of https://theguardian.eng
 ## Checkpoints
 
 - [x]  ~~Static Page~~
-- [ ] Responsive Page
+- [ ] Responsive Page (currently being developed in responsiveness branch)
 
 #### Progress can be seen at https://theguardian-remake-static.netlify.app/
 
