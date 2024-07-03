@@ -1,6 +1,6 @@
 # The First Step
 
-The first step of my full stack journey is to learn the ins and outs of HTML, CSS, and JavaScript.
+The first step of my full stack journey is to learn the ins and outs of HTML and CSS.
 
 ## The Goal
 
@@ -8,9 +8,9 @@ Recreate the landing page (and maybe the other pages) of https://theguardian.eng
 
 ## Checkpoints
 
-- [x]  ~~Static page (HTML, CSS)~~
-- [x] ~~Responsive page (HTML, CSS)~~
-- [ ] Add other pages and link up with JavaScript
+- [x]  ~~Static page~~
+- [x] ~~Responsive page~~
+- [ ] Add other pages and link them up
 
 #### Progress can be seen at https://theguardian-remake-static.netlify.app/
 
